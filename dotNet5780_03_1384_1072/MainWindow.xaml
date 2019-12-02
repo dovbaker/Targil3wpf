@@ -1,0 +1,27 @@
+﻿<Window x:Class="dotNet5780_03_1384_1072.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dotNet5780_03_1384_1072"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="800">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="UpGrid" HorizontalAlignment="Stretch" Height="auto"
+Grid.Row="0"
+VerticalAlignment="Stretch" Width="auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions >
+            <ComboBox x:Name="cbHostList" HorizontalAlignment= "Stretch" Margin="115,3,0,0" VerticalAlignment= "Stretch" Width="120" Grid.Column="0" SelectionChanged="cbHostList_SelectionChanged"/>
+            <TextBox x:Name="tbHostName" HorizontalAlignment="Stretch" Height="23" Margin="109,12,0,0" TextWrapping="Wrap" Text="{Binding Path=HostName}" VerticalAlignment="Stretch" Width="120" TextChanged="TextBox_TextChanged" Grid.Column="1" FontSize="24" FontFamily="Palatino Linotype" />
+        </Grid>
+    </Grid>
+</Window>

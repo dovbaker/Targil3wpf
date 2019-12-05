@@ -21,12 +21,13 @@ namespace dotNet5780_03_1384_1072
     public partial class MainWindow : Window
     {
         private Host currentHost;
+        List<Host> hostsList;
         public MainWindow()
         {
             InitializeComponent();
+            
 
-
-            List<Host> hostsList = new List<Host>()
+            hostsList = new List<Host>()
             {
                 new Host()
                 {
@@ -113,32 +114,34 @@ namespace dotNet5780_03_1384_1072
 
             };
 
+
             cbHostList.ItemsSource = hostsList;
             cbHostList.DisplayMemberPath = "HostName";
             cbHostList.SelectedIndex = 0;
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void cbHostList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            InitializeHost(cbHostList.SelectedIndex);
-        }
-        private void InitializeHost(int index)
-        {
-            MainGrid.Children.RemoveRange(1, 3);
-            currentHost = hostsList[index];
-            UpGrid.DataContext = currentHost;
-            for (int i = 0; i < currentHost.Units.Count; i++)
             {
-                HostingUnitUserControl a = new HostingUnitUserControl(currentHost.Units[i]);
-                MainGrid.Children.Add(a);
-                Grid.SetRow(a, i + 1);
-            }
-        }
 
-    }
+            }
+
+            private void cbHostList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+            {
+                InitializeHost(cbHostList.SelectedIndex);
+            }
+            private void InitializeHost(int index)
+            {
+                MainGrid.Children.RemoveRange(1, 3);
+                currentHost = hostsList[index];
+                UpGrid.DataContext = currentHost;
+                for (int i = 0; i < currentHost.Units.Count; i++)
+                {
+                    HostingUnitUserControl a = new HostingUnitUserControl(currentHost.Units[i]);
+                    MainGrid.Children.Add(a);
+                    Grid.SetRow(a, i + 1);
+                }
+            }
+       
+    } 
 }

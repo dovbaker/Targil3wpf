@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dotNet5780_03_1384_1072"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="800">
+        Title="israeli hotel" Height="640" Width="800">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>

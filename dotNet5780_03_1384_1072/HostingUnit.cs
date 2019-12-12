@@ -10,7 +10,7 @@ namespace dotNet5780_03_1384_1072
     {
         public string UnitName { get; set; }
         public int Rooms { get; set; }
-        public bool IsSwimmimgPool { get; set; }
+        public bool IsSwimmingPool { get; set; }
         public  List<DateTime> AllOrders { get; set; }
         public  List<string> Uris { get; set; }
     }

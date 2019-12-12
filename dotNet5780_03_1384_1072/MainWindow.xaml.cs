@@ -38,17 +38,17 @@ namespace dotNet5780_03_1384_1072
                       {
                           UnitName="bakers house",
                           Rooms=25,
-                          IsSwimmimgPool=true,
+                          IsSwimmingPool=true,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/u2J2aqLrqHFKYYs68" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       },
                       new HostingUnit()
                       {
                           UnitName="YAel house",
                           Rooms=1,
-                          IsSwimmimgPool=true,
+                          IsSwimmingPool=true,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/xmfdidcujfa7MwES9" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       }
 
                   }
@@ -65,25 +65,25 @@ namespace dotNet5780_03_1384_1072
                       {
                           UnitName="david house",
                           Rooms=30,
-                          IsSwimmimgPool=true,
+                          IsSwimmingPool=true,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/eEjSEttVdv8dy3vj9" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       },
                       new HostingUnit()
                       {
                           UnitName="Plonit house",
                           Rooms=3,
-                          IsSwimmimgPool=false,
+                          IsSwimmingPool=false,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/RuNT1JB5ctMsEDCy7" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       },
                       new HostingUnit()
                       {
                           UnitName="Almonit house",
                           Rooms=1,
-                          IsSwimmimgPool=true,
+                          IsSwimmingPool=true,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/rencSr35kLEnDAJE6" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       }
 
                   }
@@ -100,9 +100,9 @@ namespace dotNet5780_03_1384_1072
                       {
                           UnitName="Temple house",
                           Rooms=2,
-                          IsSwimmimgPool=false,
+                          IsSwimmingPool=false,
                           AllOrders=new List<DateTime>(),
-                          Uris=new List<string>(){ "https://images.app.goo.gl/rDAkrFJMWJF1VpR29" }
+                          Uris=new List<string>(){ "https://images1.calcalist.co.il/PicServer3/2018/04/15/810115/4_l.jpg" }
                       },
 
 
